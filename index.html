@@ -1,0 +1,648 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="kitob-logo.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+   
+
+    <header class="header">
+
+        <a href="#home" class="logo">
+            <i class="fa-solid fa-book-open"></i>
+            book<span>store.</span>
+        </a>
+
+        <nav class="navbar" id="navbar">
+            <a href="#home">Home</a>
+            <a href="#books">Books</a>
+            <a href="#categories">Categories</a>
+            <a href="#about">About</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="header-right">
+
+            <button class="cart-button" id="cartOpen">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span>Cart</span>
+                  <small id="cartCount">0</small>
+            </button>
+
+            <button class="menu-button" id="menuButton">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </div>
+
+    </header>
+
+    <main>  
+
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <span class="small-title">WELCOME TO OUR BOOK STORE</span>
+
+                <h1>
+                    Find your next
+                    <span>favorite book.</span>
+                </h1>
+
+                <p>
+                    Good books, good stories, and new ideas.
+                    Find a book you love and enjoy every page.
+                </p>
+
+                <a href="#books" class="main-button">
+                    Explore Books
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <div class="hero-info">
+
+                    <div>
+                        <strong>500+</strong>
+                        <span>Happy readers</span>
+                    </div>
+
+                    <div>
+                        <strong>100+</strong>
+                        <span>Books to choose</span>
+                    </div>
+
+                    <div>
+                        <strong>24/7</strong>
+                        <span>Online shopping</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="hero-image">
+
+
+                <img
+                    src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=1000&q=85"
+                    alt="Books on a shelf"
+                
+
+                   
+
+                >
+
+            </div>
+
+        </section>
+
+    
+
+        <section class="books-section" id="books">
+
+            <div class="section-top">
+
+                <div>
+                    <span class="small-title">OUR COLLECTION</span>
+                    <h2>Books you may like</h2>
+                    <p>Take a look at our books and find one for you.</p>
+                </div>
+
+                <span class="book-number">01 — 04</span>
+
+            </div>
+
+            <div class="books-grid">
+
+                <article class="book-card">
+
+                    <div class="book-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=700&q=85"
+                            alt="Great Dreams book"
+                        >
+                        <span class="book-tag">Popular</span>
+                    </div>
+
+                    <div class="book-info">
+
+                        <span class="book-category">Life & Growth</span>
+
+                        <h3>Great Dreams</h3>
+
+                        <p>
+                            A simple book about big dreams and new goals.
+                        </p>
+
+                        <div class="book-bottom">
+                            <strong>85,000 UZS</strong>
+                            <button class="order-button" data-id="1">
+                                Add to Cart
+                            </button>
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <article class="book-card">
+
+                    <div class="book-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=700&q=85"
+                            alt="A New Way book"
+                        >
+                        <span class="book-tag">New</span>
+                    </div>
+
+                    <div class="book-info">
+
+                        <span class="book-category">Personal Growth</span>
+
+                        <h3>A New Way</h3>
+
+                        <p>
+                            Small changes that can make a big difference.
+                        </p>
+
+                        <div class="book-bottom">
+                            <strong>95,000 UZS</strong>
+                            <button class="order-button" data-id="2">
+                                Add to Cart
+                            </button>
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <article class="book-card">
+
+                    <div class="book-image">
+                        <img
+                            src="lider bola rasm.jpg"
+                            alt="The Power of Knowledge book"
+                        >
+                    </div>
+
+                    <div class="book-info">
+
+                        <span class="book-category">Learning</span>
+
+                        <h3>The Power of Knowledge</h3>
+
+                        <p>
+                            Learn new things and see the world in a new way.
+                        </p>
+
+                        <div class="book-bottom">
+                            <strong>75,000 UZS</strong>
+                            <button class="order-button" data-id="3">
+                                Add to Cart
+                            </button>
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <article class="book-card">
+
+                    <div class="book-image">
+                        <img
+                            src="chumolilarsaltanati.jpg"
+                            alt="A Fresh Start book"
+                        >
+                    </div>
+
+                    <div class="book-info">
+
+                        <span class="book-category">Stories</span>
+
+                        <h3>A Fresh Start</h3>
+
+                        <p>
+                            A nice story about life, hope, and new days.
+                        </p>
+
+                        <div class="book-bottom">
+                            <strong>90,000 UZS</strong>
+                            <button class="order-button" data-id="4">
+                                Add to Cart
+                            </button>
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <section class="categories-section" id="categories">
+
+            <div class="section-heading">
+
+                <span class="small-title">EXPLORE BOOKS</span>
+
+                <h2>Find what you love.</h2>
+
+                <p>
+                    There is a book for every mood and every moment.
+                </p>
+
+            </div>
+
+            <div class="categories-grid">
+
+                <a href="#books" class="category-card">
+                    <i class="fa-solid fa-book-open"></i>
+                    <h3>Fiction</h3>
+                    <span>Stories to enjoy</span>
+                </a>
+
+                <a href="#books" class="category-card">
+                    <i class="fa-solid fa-brain"></i>
+                    <h3>Learning</h3>
+                    <span>Learn something new</span>
+                </a>
+
+                <a href="#books" class="category-card">
+                    <i class="fa-solid fa-heart"></i>
+                    <h3>Life</h3>
+                    <span>Books about life</span>
+                </a>
+
+                <a href="#books" class="category-card">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <h3>Ideas</h3>
+                    <span>New ways to think</span>
+                </a>
+
+            </div>
+
+        </section>
+
+      
+
+        <section class="best-section">
+
+            <div class="section-heading">
+
+                <span class="small-title">READERS' CHOICE</span>
+
+                <h2>Best Sellers</h2>
+
+                <p>
+                    Books that readers enjoy the most.
+                </p>
+
+            </div>
+
+            <div class="best-grid">
+
+                <div class="best-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=600&q=85"
+                        alt="Great Dreams"
+                    >
+
+                    <div>
+                        <span>01 / POPULAR</span>
+                        <h3>Great Dreams</h3>
+                        <p>85,000 UZS</p>
+                    </div>
+
+                </div>
+
+                <div class="best-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=600&q=85"
+                        alt="A New Way"
+                    >
+
+                    <div>
+                        <span>02 / NEW</span>
+                        <h3>A New Way</h3>
+                        <p>95,000 UZS</p>
+                    </div>
+
+                </div>
+
+                <div class="best-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1519682337058-a94d519337bc?auto=format&fit=crop&w=600&q=85"
+                        alt="The Power of Knowledge"
+                    >
+
+                    <div>
+                        <span>03 / READER'S PICK</span>
+                        <h3>The Power of Knowledge</h3>
+                        <p>75,000 UZS</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+       
+
+        <section class="about-section" id="about">
+
+            <div class="about-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?auto=format&fit=crop&w=1000&q=85"
+                    alt="A person reading a book"
+                >
+
+            </div>
+
+            <div class="about-content">
+
+                <span class="small-title">ABOUT OUR STORE</span>
+
+                <h2>Every book has a story to tell.</h2>
+
+                <p>
+                    We love books and believe that reading can make life better.
+                    Our store brings together books for learning, fun, and everyday life.
+                </p>
+
+                <a href="#books" class="text-link">
+                    Find a book
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </section>
+
+      
+
+        <section class="reviews-section" id="reviews">
+
+            <div class="section-heading">
+
+                <span class="small-title">WHAT PEOPLE SAY</span>
+
+                <h2>From our readers</h2>
+
+                <p>
+                    A few words from people who love reading.
+                </p>
+
+            </div>
+
+            <div class="reviews-grid">
+
+                <div class="review-card">
+
+                    <div class="stars">★★★★★</div>
+
+                    <p>
+                        "I found some really good books here.
+                        The website is easy to use."
+                    </p>
+
+                    <h4>Alex Morgan</h4>
+                    <span>Book lover</span>
+
+                </div>
+
+                <div class="review-card">
+
+                    <div class="stars">★★★★★</div>
+
+                    <p>
+                        "A nice place to find books.
+                        I will come back for more."
+                    </p>
+
+                    <h4>Emma Wilson</h4>
+                    <span>Reader</span>
+
+                </div>
+
+                <div class="review-card">
+
+                    <div class="stars">★★★★★</div>
+
+                    <p>
+                        "Good book choices and a clean website.
+                        I really like it."
+                    </p>
+
+                    <h4>Daniel Smith</h4>
+                    <span>Customer</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    
+
+        <section class="newsletter-section">
+
+            <span class="small-title">STAY IN TOUCH</span>
+
+            <h2>Love reading?</h2>
+
+            <p>
+                Get news about new books and special offers.
+            </p>
+
+            <form class="newsletter-form" id="newsletterForm">
+
+                <input
+                    type="email"
+                    placeholder="Your email address"
+                    required
+                >
+
+                <button type="submit">
+                    Join Us
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+            </form>
+
+        </section>
+
+       
+
+        <section class="contact-section" id="contact">
+
+            <div>
+
+                <span class="small-title">GET IN TOUCH</span>
+
+                <h2>Have a question?</h2>
+
+                <p>We are happy to hear from you.</p>
+
+            </div>
+
+            <a href="mailto:@javkhrmakhmudov" class="main-button">
+                Contact Us
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </section>
+
+    </main>
+
+    
+
+    <footer class="footer">
+
+        <a href="#home" class="logo">
+            <i class="fa-solid fa-book-open"></i>
+            book<span>store.</span>
+        </a>
+
+        <p>Good books. Good days.</p>
+
+        <div class="social-links">
+
+            <a href="#" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#" aria-label="Telegram">
+                <i class="fa-brands fa-telegram"></i>
+            </a>
+
+            <a href="#" aria-label="Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+        </div>
+
+        <span class="copyright">
+            © 2026 Book Store. All rights reserved.
+        </span>
+
+    </footer>
+
+
+
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+   
+
+    <aside class="cart-panel" id="cartPanel">
+
+        <div class="cart-header">
+
+            <div>
+                <span class="small-title">YOUR BAG</span>
+                <h2>My Cart <span id="panelCount">(0)</span></h2>
+            </div>
+
+            <button class="close-button" id="cartClose">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+        </div>
+
+        <div class="cart-items" id="cartItems">
+            <p class="empty-cart">Your cart is empty.</p>
+        </div>
+
+        <div class="cart-footer">
+
+            <div class="total-line">
+                <span>Total</span>
+                <strong id="cartTotal">0 UZS</strong>
+            </div>
+
+            <button class="checkout-button" id="checkoutButton">
+                Buy Now
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <div class="toast" id="toast">
+        <i class="fa-solid fa-circle-check"></i>
+        <span>Added to Cart!</span>
+    </div>
+
+
+    <div class="checkout-modal" id="checkoutModal">
+
+        <div class="checkout-box">
+
+            <button class="close-button modal-close" id="modalClose">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <span class="small-title">ONE MORE STEP</span>
+
+            <h2>Your Order</h2>
+
+            <p>Enter your details to finish your order.</p>
+
+            <form id="checkoutForm">
+
+                <label for="customerName">Name</label>
+
+                <input
+                    type="text"
+                    id="customerName"
+                    placeholder="Your name"
+                    required
+                >
+
+                <label for="customerPhone">Phone</label>
+
+                <input
+                    type="tel"
+                    id="customerPhone"
+                    placeholder="Your phone number"
+                    required
+                >
+
+                <button type="submit" class="checkout-button">
+                    Place Order
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
